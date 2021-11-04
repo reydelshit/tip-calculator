@@ -86,3 +86,14 @@
     font-size: 3rem;
     color: var(--Strong-cyan);
 }
+
+@media (max-width: 447px) {
+    
+    .total {
+        font-size: 1.5rem;
+    }
+
+    .yow {
+        height: 80%;
+    }
+}

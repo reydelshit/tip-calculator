@@ -98,17 +98,15 @@ main {
         flex-wrap: nowrap;
         flex-direction: column;
 
-        padding: 1rem;
+        padding: 0.2rem;
     }
     main{
         width: 100%;
+
     }
 
     .sections {
         height: 25rem;
-    }
-    .yow {
-        height: 10rem;
     }
 
     .btn button {
