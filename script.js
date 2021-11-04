@@ -1,12 +1,13 @@
 let bill = document.querySelector('#bill__holder')
 
-//btn
+const btnnBro = document.querySelector('.tip__choices')
 
-const btn5 = document.getElementById('value__of5')
-const btn10 = document.getElementById('value__of10')
-const btn15 = document.getElementById('value__of15')
-const btn25 = document.getElementById('value__of25')
-const btn50 = document.getElementById('value__of50')
+//btn
+// const btn5 = document.getElementById('value__of5')
+// const btn10 = document.getElementById('value__of10')
+// const btn15 = document.getElementById('value__of15')
+// const btn25 = document.getElementById('value__of25')
+// const btn50 = document.getElementById('value__of50')
 const btnCustom = document.getElementById('custom')
 
 
@@ -16,35 +17,29 @@ const tipAmount = document.querySelector('.tip_amount')
 let totalAmount = document.querySelector('.totall')
 
 
-
-
-
-// totalAmount.innerHTML = 'yow'
+btnnBro.addEventListener('click', (y) => {
+    if(y.target !== y.currentTarget){
+        const ngee = y.target.value
+        // parseFloat(y.target.value) / 100
+        // tipAmount.innerHTML = ngee
+        multi(ngee)
+    }
+})
 
 bill.oninput = function(){
-    totalAmount.innerHTML = bill.value
-    
-    if(bill.value > 8){
-        return 0
-    }
+    totalAmount.innerHTML = `$${bill.value}`
+    // multi(bill.value)
 }
 
-// bill.addEventListener(oninput, () => {
-//     bill.value = totalAmount.innerHTML
-//     console.log(bill.value)
-// })
-// console.log(bill.value)
-// const jdaj = realtimeInput()
+function multi(bros){
+    let broBros = Math.floor(bill.value / bros)
+    // let dsa = Math.floor(broBros)
 
-// console.log(jdaj)
-// bill.value = realtimeInput()
+    // console.log(dsa)
+    tipAmount.innerHTML = broBros
+    console.log(broBros)
 
-// function realtimeInput(){
-//     bill.addEventListener(oninput, function(){
-//         bill.value = totalAmount.innerHTML
-//     })
-// }
-// realtimeInput()
+}
 
-// bill.value = totalAmount.innerHTML
-// console.log(bill.value)
+
+
