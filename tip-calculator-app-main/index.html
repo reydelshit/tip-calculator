@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="right-section.css" />
+    <link rel="stylesheet" href="left-section.css" />
+    <script defer src="script.js"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <section class="left__section sections">
+        <div class="inside__left">
+          <div class="top__left">
+            <label for="bill"><span class="header">Bill</span></label>
+            <input type="number" id="bill__holder" />
+          </div>
+          <div class="select__tip">
+            <span class="header">Select Tip %</span>
+            <div class="tip__choices">
+              <input type="button" value="5%" id="value__of5" />
+              <input type="button" value="10%" id="value__of10" />
+              <input type="button" value="15%" id="value__of15" />
+              <input type="button" value="25%" id="value__of25" />
+              <input type="button" value="50%" id="value__of50" />
+              <input type="number" placeholder="Custom" />
+            </div>
+          </div>
+          <div class="input__people">
+            <span class="header">Number of People</span>
+            <input type="number" />
+          </div>
+        </div>
+      </section>
+      <section class="right__section sections">
+        <div class="yow">
+          <div class="top__section">
+            <div class="firs nge">
+              <h1>
+                Tip Amount <br />
+                <span class="sub">/ person</span>
+              </h1>
+              <span class="tip_amount total">$0.00</span>
+            </div>
+            <div class="secons nge">
+              <h1>
+                Total
+                <br />
+                <span class="sub">/ person</span>
+              </h1>
+              <span class="tip_amount total">$0.00</span>
+            </div>
+          </div>
+          <div class="btn">
+            <button>RESET</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

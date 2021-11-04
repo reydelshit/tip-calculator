@@ -1,0 +1,96 @@
+.left__section {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inside__left > *{
+    margin-bottom: 2rem;
+}
+
+
+
+/* input css */
+
+
+input[type=number] {
+
+    height: 2.5rem;
+    width: 100%;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+
+    text-align: end;
+
+    font-family: var(--mono47);
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--Very-dark-cyan);
+    border: 2px solid var(--Strong-cyan);
+
+    -moz-appearance: textfield;
+} 
+
+input[type=number]:focus {
+
+    outline: none;
+}
+
+/* remove arrows input numbers */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  opacity: 1; 
+  margin: 0; 
+}
+
+
+/* ============================================================ */
+
+/* tip */
+
+.tip__choices {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.tip__choices input[type=button] {
+    width: 7rem;
+    height: 2.4rem;
+    border-radius: 3px;
+
+    font-family: var(--mono47);
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--White);
+    border: none;
+    background: var(--Very-dark-cyan);
+}
+
+.tip__choices input[type=button]:hover {
+
+    background: var(--Strong-cyan);
+    cursor: pointer;
+}
+
+.tip__choices input[type=number] {
+
+    width: 7rem;
+    height: 2.5rem;
+
+    font-family: var(--mono47);
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--Very-dark-cyan);
+
+    text-align: end;
+}
+
+.tip__choices input[type=number]::placeholder {
+    font-size: 1rem;
+}
