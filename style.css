@@ -40,12 +40,16 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+
     border-radius: 20px;
     background: var(--White);
+
+    position: relative;
 }
 
 .sections {
-    width: 100%;
+    /* position: static; */
+    width: 28rem;
     height: 100%;
     padding: 2em;
 

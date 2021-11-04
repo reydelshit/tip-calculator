@@ -3,6 +3,8 @@
 }
 
 .yow {
+
+    /* width: 24rem; */
     padding: 2rem;
     height: 100%;
     background-color: var(--Very-dark-cyan);
@@ -69,6 +71,7 @@
     font-family: var(--mono47);
     color: var(--White);
     font-size: 0.8rem;
+    
 }
 
 .firs{
@@ -85,6 +88,11 @@
     font-family: var(--mono47);
     font-size: 3rem;
     color: var(--Strong-cyan);
+    width: 15rem;
+
+    text-align: end;
+    overflow-x: hidden;
+    /* overflow-x: scroll; */
 }
 
 @media (max-width: 447px) {
