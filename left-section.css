@@ -3,16 +3,31 @@
     display: flex;
     flex-direction: column;
 
+    flex-wrap: nowrap;
+
 }
 
 .inside__left > *{
     margin-bottom: 2rem;
 }
 
+/* iconsssssssssssssssssssssssssssssssssssssssssssss */
+.top__left::before {
+    content: url('./images/icon-dollar.svg');
+    position: relative;
+    top: 55px;
+    left: 10px;
+}
+
+.input__people::before {
+    content: url('./images/icon-person.svg');
+    position: relative;
+    top: 55px;
+    left: 10px;
+}
 
 
 /* input css */
-
 
 input[type=number] {
 
@@ -29,7 +44,7 @@ input[type=number] {
     font-size: 1.3rem;
     color: var(--Very-dark-cyan);
     border: 2px solid var(--Strong-cyan);
-
+    background: var(--LLight-grayish-cyan);
     -moz-appearance: textfield;
 } 
 
@@ -57,6 +72,8 @@ input[type=number]::-webkit-outer-spin-button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
+
+    overflow: auto;
 }
 
 .tip__choices input[type=button] {
@@ -70,6 +87,13 @@ input[type=number]::-webkit-outer-spin-button {
     color: var(--White);
     border: none;
     background: var(--Very-dark-cyan);
+}
+
+@media (max-width: 447px) {
+    
+    .tip__choices input[type=button] {
+        width: 90%;
+    }
 }
 
 .tip__choices input[type=button]:hover {
@@ -93,4 +117,17 @@ input[type=number]::-webkit-outer-spin-button {
 
 .tip__choices input[type=number]::placeholder {
     font-size: 1rem;
+}
+
+@media (max-width: 447px) {
+    
+    .tip__choices input[type=number] {
+        width: 90%;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .tip__choices input[type=number]::placeholder {
+        font-size: 0.7rem;
+    }
 }

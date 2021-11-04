@@ -33,6 +33,10 @@
     border-radius: 3px;
     cursor: pointer;
     background: var(--Strong-cyan);
+
+    font-family: var(--mono47);
+    font-size: 1.4rem;
+    color: var(--Very-dark-cyan);
 }
 
 .btn button:hover {
