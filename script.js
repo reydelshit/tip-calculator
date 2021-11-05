@@ -7,6 +7,7 @@ let totalAmount = document.querySelector('.totall')
 
 let resetBtn = document.querySelector('#reset')
 
+let custooo = document.getElementById('custom')
 // tipAmount = 0
 
 bill.oninput = function(){
@@ -15,10 +16,17 @@ bill.oninput = function(){
 
 btnnBro.addEventListener('click', (y) => {
     if(y.target !== y.currentTarget){
-        let ngee = parseFloat(y.target.value)
+        let ngee = parseFloat(y.target.value )
         multi(ngee)
     }
 })
+
+// custooo.addEventListener('keyup', function(){
+//     if(Number.isInteger(parseFloat(this.value))){
+        
+//     }
+// })
+
 
 function multi(bros){
     let broBros = (bill.value * bros) / 100 
@@ -32,6 +40,7 @@ function multi(bros){
         } else {
             ny = broBros / inputPeople.value
             tipAmount.innerHTML = ny
+            totalAmount.innerHTML = bill.value / inputPeople.value
         } 
     
     }
