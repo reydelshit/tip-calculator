@@ -8,6 +8,7 @@ const btnnBro = document.querySelector('.tip__choices')
 // const btn15 = document.getElementById('value__of15')
 // const btn25 = document.getElementById('value__of25')
 // const btn50 = document.getElementById('value__of50')
+
 const btnCustom = document.getElementById('custom')
 
 
@@ -19,9 +20,9 @@ let totalAmount = document.querySelector('.totall')
 
 btnnBro.addEventListener('click', (y) => {
     if(y.target !== y.currentTarget){
-        const ngee = y.target.value
-        // parseFloat(y.target.value) / 100
-        // tipAmount.innerHTML = ngee
+        const ngee = parseFloat(y.target.value) / 100
+        
+    //    console.log(ngee)
         multi(ngee)
     }
 })
@@ -33,11 +34,9 @@ bill.oninput = function(){
 
 function multi(bros){
     let broBros = Math.floor(bill.value / bros)
-    // let dsa = Math.floor(broBros)
 
-    // console.log(dsa)
     tipAmount.innerHTML = broBros
-    console.log(broBros)
+    // console.log(broBros)
 
 }
 
