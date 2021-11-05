@@ -1,34 +1,23 @@
 .left__section {
-
     display: flex;
     flex-direction: column;
-
     flex-wrap: nowrap;
-
 }
-
 .inside__left > *{
     margin-bottom: 1.4rem;
 }
-
-/* iconsssssssssssssssssssssssssssssssssssssssssssss */
 .top__left::before {
     content: url('./images/icon-dollar.svg');
     position: relative;
     top: 55px;
     left: 10px;
 }
-
 .input__people::before {
     content: url('./images/icon-person.svg');
     position: relative;
     top: 55px;
     left: 10px;
 }
-
-
-/* input css */
-
 input[type=number] {
 
     height: 2.5rem;
@@ -36,9 +25,7 @@ input[type=number] {
     border: none;
     padding: 1rem 1.5rem;
     border-radius: 4px;
-
     text-align: end;
-
     font-family: var(--mono47);
     font-weight: 400;
     font-size: 1.3rem;
@@ -47,12 +34,9 @@ input[type=number] {
     background: var(--LLight-grayish-cyan);
     -moz-appearance: textfield;
 } 
-
 input[type=number]:focus {
-
     outline: none;
 }
-
 /* remove arrows input numbers */
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -61,18 +45,10 @@ input[type=number]::-webkit-outer-spin-button {
   opacity: 1; 
   margin: 0; 
 }
-
-
-/* ============================================================ */
-
-/* tip */
-
 .tip__choices {
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
-
     overflow: auto;
 }
 
@@ -80,7 +56,6 @@ input[type=number]::-webkit-outer-spin-button {
     width: 7rem;
     height: 2.4rem;
     border-radius: 3px;
-
     font-family: var(--mono47);
     font-weight: 400;
     font-size: 1.3rem;
@@ -88,9 +63,7 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
     background: var(--Very-dark-cyan);
 }
-
 .tip__choices input[type=button]:focus {
-
     background: var(--Strong-cyan);
 }
 
@@ -111,12 +84,10 @@ input[type=number]::-webkit-outer-spin-button {
 
     width: 7rem;
     height: 2.5rem;
-
     font-family: var(--mono47);
     font-weight: 400;
     font-size: 1.3rem;
     color: var(--Very-dark-cyan);
-
     text-align: end;
 }
 
