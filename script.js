@@ -37,8 +37,8 @@ function multi(bros){
             tipAmount.innerHTML = '$0.00'
         } else {
             ny = broBros / inputPeople.value
-            tipAmount.innerHTML = `$${ny}`
-            totalAmount.innerHTML = bill.value / inputPeople.value
+            tipAmount.innerHTML = `$${Math.floor(ny)}`
+            totalAmount.innerHTML = `$${Math.floor(bill.value / inputPeople.value)}`
         } 
     
     }
