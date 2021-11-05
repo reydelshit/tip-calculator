@@ -21,13 +21,6 @@ btnnBro.addEventListener('click', (y) => {
     }
 })
 
-// custooo.addEventListener('keyup', function(){
-//     if(Number.isInteger(parseFloat(this.value))){
-        
-//     }
-// })
-
-
 function multi(bros){
     let broBros = (bill.value * bros) / 100 
     broBros.toFixed(2)
@@ -39,7 +32,7 @@ function multi(bros){
             tipAmount.innerHTML = '$0.00'
         } else {
             ny = broBros / inputPeople.value
-            tipAmount.innerHTML = ny
+            tipAmount.innerHTML = `$${ny}`
             totalAmount.innerHTML = bill.value / inputPeople.value
         } 
     
