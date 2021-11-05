@@ -5,6 +5,8 @@ const inputPeople = document.getElementById('inputPeople')
 let tipAmount = document.querySelector('.tip_amount')
 let totalAmount = document.querySelector('.totall')
 
+let resetBtn = document.querySelector('#reset')
+
 // tipAmount = 0
 
 bill.oninput = function(){
@@ -35,27 +37,9 @@ function multi(bros){
     }
 }
 
-// inputPeople.oninput = function(){
 
-//     if(!(inputPeople.value)){
-//         tipAmount.innerHTML = '$0.00'
-//         console.log('please select tip again')
-//     } else {
-//         ny = parseInt(tipAmount.innerHTML) / inputPeople.value
-//         tipAmount.innerHTML = ny
-//     } 
-
-// }
-
-
-
-
-// let total = 0
-
-// function toCalc(){
-//     total =  Math.round(total * 100) / 100;
-//     total = total.toFixed(2)
-// }
-
-
+resetBtn.addEventListener('click', () => {
+    location.reload();
+    return false;
+})
 
