@@ -97,11 +97,14 @@
 
 @media (max-width: 447px) {
     
+    .nge h1 {
+        width: 10rem;
+    }
     .total {
         font-size: 1.5rem;
     }
 
     .yow {
-        height: 80%;
+        height: 85%;
     }
 }
