@@ -11,7 +11,12 @@ let custooo = document.getElementById('custom')
 // tipAmount = 0
 
 bill.oninput = function(){
-    totalAmount.innerHTML = `$${bill.value}`
+    // totalAmount.innerHTML = `$${bill.value}`
+    if(bill.value === ''){
+        totalAmount.innerHTML = '$0.00'
+    } else {
+        totalAmount.innerHTML = `$${bill.value}`
+    }
 }
 
 btnnBro.addEventListener('click', (y) => {
